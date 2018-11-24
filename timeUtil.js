@@ -61,7 +61,7 @@ const reverseUTC = (t, offsetString = '00:00', fmt = ISO_DT, outFmt) => {
  *  time: 'HH:mm:ss' || DEFAULT_TIME // 0 fill where ever missing
  *  // NOTE DATETIME SUPPORT YET. datetime: {date} ${time}
  * 
- * TODO: 
+ * TODO: EVERYTHING this code is trash
  * 1) refactor, there's lots of potential here. 
  * 2) range checking for the dates and times.
  */
