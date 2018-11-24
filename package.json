@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/j8jacobs/time-util#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "moment-timezone": "^0.5.23"
   }
 }

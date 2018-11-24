@@ -41,8 +41,9 @@ const logErr = (fn, err) => `UTIL ERR:v2TimeUtil:${fn}:${err}`;
  * @t (str): YYYY-MM-DD HH:mm:ss. Time that will be converted if necessary.
  * @offsetString (str): +HH:MM or -HH:MM. Offset to adjust 't' by. 
  * @return (str): YYYY-MM-DD HH:mm:ss. In UTC timezone.
+ * TODO: implement the fmt / outfmt stuff
  */
-const toUTC = (t, offsetString = '00:00') => {
+const toUTC = (t, offsetString = '00:00', fmt = ISO_DT, outFmt) => {
   // find the hours and minutes t needs to be adjusted by
   const [hours, mins] = offsetString.split(':').map(parseInt);
 
