@@ -1,0 +1,27 @@
+{
+  "name": "time-util",
+  "version": "1.0.0",
+  "description": "Expressive time functionality handler",
+  "main": "timeUtil.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j8jacobs/time-util.git"
+  },
+  "keywords": [
+    "time",
+    "util",
+    "utility"
+  ],
+  "author": "Julian Jacobs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j8jacobs/time-util/issues"
+  },
+  "homepage": "https://github.com/j8jacobs/time-util#readme",
+  "dependencies": {
+    "moment-timezone": "^0.5.23"
+  }
+}
