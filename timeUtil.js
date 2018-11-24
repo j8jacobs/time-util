@@ -1,3 +1,22 @@
+/*----------------------------------------------------------------------------*
+ * Expressive time functionality handler.
+ * Meant to be an expressive wrapper over the moment-timezone class.
+ * 
+ * My goal for this file is to help serverside time handling/conversion 
+ * operations very declarative and expressive, so time handling and conversion
+ * on the server is very clear and readable - both converting to UTC and out
+ * of UTC.
+ * 
+ * That also being said, the first two functions are called toUTC and 
+ * reverseUTC. This is because this file was written with intent to translate
+ * all clientside requests INTO UTC, since all data should be stored in 
+ * UTC. This, instead of naming the file that translates the timezones back
+ * into the clients timezone "fromUTC" or something like that is because I 
+ * want the user to know that serverside: get your timezones in UTC. Handle
+ * your logic, and return data back to the client in their timezone: thus,
+ * reversing the transformation process of client timezone -> UTC BACK 
+ * into client timezone.
+ *----------------------------------------------------------------------------*/
 'use strict';
 const moment = require('moment-timezone');
 
